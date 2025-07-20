@@ -107,7 +107,27 @@ main{
     max-width: 1440px;
     margin: 0 auto;
 }
-   
+/*features section related styles*/
+.features{
+    gap:    140px;
+
+}
+#feature-section-title{
+    border-left: 5px solid #FF900E ;
+    padding-left: 20px;
+
+}  
+.feature-card{
+      padding: 30px;
+    box-shadow: 0 4px 3px 0 lightslategray;  
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.feature-card .feature title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+}
 
 /*Some facts related car*/
 .facts-container{
