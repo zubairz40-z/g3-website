@@ -127,8 +127,24 @@ main{
     font-weight: 600;
     font-size: 1.25rem;
     margin-top: 0px;
+    font-weight: 500
+    ;
 }
+.feature-architect img{
+    width: 100%;
+}
+#exp-badge{
+    padding: 45px 45px ;
+    font-size: 1.5rem;
+    margin-left: -100px;
+    margin-top: -100px;
 
+}
+#exp-year{
+    font-size: 4rem;
+    font-weight: 700px;
+
+}
 /*Some facts related car*/
 .facts-container{
     display: grid;
@@ -183,6 +199,10 @@ main{
     .our-features{
         margin-left: 20px;
     }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 } 
 /*sponsor related styles*/
 .sponsor-info
@@ -201,7 +221,7 @@ main{
 /*medium size device*/
 @media screen and (min-width: 576px) and (max-width: 992px) {
 
-    .teams{
+    .teams,.features{
         flex-direction: column;
     }
     .our-features{
@@ -212,5 +232,9 @@ main{
     grid-template-columns: repeat(3,1fr) ;
     gap: 50px;
 }
+  #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+} 
     
-}
