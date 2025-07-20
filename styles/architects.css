@@ -108,20 +108,7 @@ main{
     margin: 0 auto;
 }
    
-/*respondsive media query*/
-@media screen and (max-width: 576px) {
-    .navbar,
-     .nav-links,
-     .teams{
-        flex-direction: column;
-    }
-    .team-img-container{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .our-features{
-        margin-left: 20px;
-    }
-} 
+
 /*Some facts related car*/
 .facts-container{
     display: grid;
@@ -149,8 +136,48 @@ main{
     font-weight: 600;
 }
 .fact-description{
-    
+
 }
+/*respondsive media query*/
+@media screen and (max-width: 576px) {
+    .navbar,
+     .nav-links,
+     .teams,
+    
+     {
+        flex-direction: column;
+    }
+    .team-img-container ,.facts-container,.sponsor-companies{
+        grid-template-columns: 1fr;
+    }
+    .facts-container{
+        justify-content: center;
+       gap: 24px;
+
+    }
+    .sponsor-companies{
+        justify-items: center;
+        gap: 50px
+        ;
+    }
+    .our-features{
+        margin-left: 20px;
+    }
+} 
+/*sponsor related styles*/
+.sponsor-info
+{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+
+
+}
+.sponsor-companies{
+    display: grid;
+    grid-template-columns: repeat(5,1fr) ;
+}
+
 /*medium size device*/
 @media screen and (min-width: 576px) and (max-width: 992px) {
 
@@ -160,5 +187,10 @@ main{
     .our-features{
         margin: 50px auto;
     }
+    .sponsor-companies{
+  
+    grid-template-columns: repeat(3,1fr) ;
+    gap: 50px;
+}
     
 }
